@@ -7,6 +7,83 @@
         <link rel="stylesheet" href="styles/styles.less"/>
     </head>
     <body>
-        Hello world!
+        <header class="header">
+            <div class="column-wrapper">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="/"><img class="logo" src="styles/blocks/logo/logo.svg" alt="hh.ru" ></a>
+                    </div>
+                    <div class="header__fill"></div>
+                    <div class="header__button">
+                        <button class="header-button-icon header-button-icon_search" aria-label="Search"></button>
+                    </div>
+                    <div class="header__button">
+                        <button class="header-button-icon header-button-icon_profile" aria-label="Profile"></button>
+                    </div>
+                    <div class="header__button">
+                        <button class="header-button-icon header-button-icon_menu" aria-label="Menu"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-content">
+            <div class="column-wrapper">
+                <h2 class="heading heading_level-2">Популярные товары</h2>
+                <div class="product-card-list">
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-1.jpg" alt="Зонт" />
+                        </div>
+                        <h4 class="heading heading_level-4">Зонт</h4>
+                        <div class="product-card__price">1 990 ₽</div>
+                    </a>
+
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-2.jpg" alt="Сумка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Сумка</h4>
+                        <div class="product-card__price">290 ₽</div>
+                    </a>
+
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-3.jpg" alt="Шлепанцы" />
+                        </div>
+                        <h4 class="heading heading_level-4">Шлепанцы</h4>
+                        <div class="product-card__price">790 ₽</div>
+                    </a>
+
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-4.jpg" alt="Футболка" />
+                            <div class="product-card__sale">sale</div>
+                        </div>
+                        <h4 class="heading heading_level-4">Футболка</h4>
+                        <div class="product-card__price">
+                            <span class="product-card__old-price">690</span>
+                            390 ₽
+                        </div>
+                    </a>
+
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-5.jpg" alt="Толстовка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Толстовка</h4>
+                        <div class="product-card__price">13990 ₽</div>
+                    </a>
+
+                    <a class="product-card" href="/">
+                        <div class="product-card__image-container">
+                            <img class="product-card__image" src="images/product-6.jpg" alt="Подушка" />
+                        </div>
+                        <h4 class="heading heading_level-4">Подушка</h4>
+                        <div class="product-card__price">990 ₽</div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
