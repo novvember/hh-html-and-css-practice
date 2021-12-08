@@ -1,0 +1,18 @@
+{
+    "name": "html-and-css-practice",
+    "version": "1.0.0",
+    "homepage": "http://leonidfeskov.github.io/html-and-css-practice/",
+    "author": "Leonid Feskov",
+    "license": "MIT",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html --public-url '.'",
+        "deploy": "yarn build && gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@parcel/transformer-less": "^2.0.1",
+        "gh-pages": "^3.2.3",
+        "less": "^4.1.2",
+        "parcel": "^2.0.1"
+    }
+}
