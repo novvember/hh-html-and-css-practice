@@ -23,13 +23,20 @@
 
     &__sale {
         width: 30px;
-        height: 30px;
+        height: $width;
         background-color: #212122;
         border-radius: 50%;
         color: #fff;
-        font: 12px/30px @font-family-heading;
+        font: 12px/$width @font-family-heading;
         position: absolute;
         top: 10px;
         left: 10px;
+
+        @media @screen-gt-s {
+            width: 40px;
+            height: $width;
+            line-height: $width;
+            font-size: 14px;
+        }
     }
 }

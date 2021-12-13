@@ -1,6 +1,7 @@
 .heading {
     margin: 0 0 20px;
     font-family: @font-family-heading;
+    font-weight: normal;
 
     &_level-1 {
         font-size: 26px;
@@ -8,10 +9,18 @@
 
     &_level-2 {
         font-size: 20px;
+
+        @media @screen-gt-s {
+            font-size: 30px;
+        }
     }
 
     &_level-4 {
         font-size: 16px;
         margin-bottom: 10px;
+
+        @media @screen-gt-s {
+            font-size: 18px;
+        }
     }
 }
