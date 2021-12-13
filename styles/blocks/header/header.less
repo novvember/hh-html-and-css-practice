@@ -6,6 +6,10 @@
         display: flex;
         align-items: center;
         height: 60px;
+
+        @media @screen-gt-m {
+            height: 80px;
+        }
     }
 
     &__fill {
@@ -15,7 +19,15 @@
     &__button {
         margin-left: 20px;
     }
+
+    @media @screen-gt-s {
+        &__button_menu {
+            display: none;
+        }
+    }
 }
+
+@icons: search, profile, menu;
 
 .header-button-icon {
     background: none;
@@ -24,15 +36,39 @@
     height: 30px;
     color: #fff;
 
-    &_search {
-        background-image: url('search.svg');
+    each(@icons, {
+        &_@{value} {
+            background-image: url('@{value}.svg');
+        }
+    })
+}
+
+@media @screen-gt-s {
+    .header-button-icon_profile {
+        display: none;
+    }
+}
+
+.header-button {
+    box-sizing: border-box;
+    height: 38px;
+    background: none;
+    color: #fff;
+    border: 1px solid fade(#ccc, 50%);
+    border-radius: 19px;
+    padding: 0 20px;
+    font: 14px/36px Arial, sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #fff;
     }
 
     &_profile {
-        background-image: url('profile.svg');
-    }
+        display: none;
 
-    &_menu {
-        background-image: url('menu.svg');
+        @media @screen-gt-s {
+            display: inline-block;
+        }
     }
 }
