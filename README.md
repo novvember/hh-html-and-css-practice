@@ -28,7 +28,7 @@
 
 ## Как делать
 * Скопировать данный репозиторий, например с помощью [github import](https://github.com/new/import)
-* Создать новую ветку `git switch -c BRANCH_NAME`]
+* Создать новую ветку `git switch -c BRANCH_NAME`
 * Сделать домашнее задание, пушнуть в ветку `BRANCH_NAME`
 * Создать пулреквест на github
 * Выполнить `yarn deploy` из папки со своим проектом для публикации верстки на gh-pages
