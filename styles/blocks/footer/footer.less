@@ -42,7 +42,7 @@
 
 @media (min-width: 1000px) {
   .footer__inner {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-areas: 'social apps logo'
                          'text text text';
     gap: 39px;
@@ -51,6 +51,8 @@
 
 .footer__social {
   grid-area: social;
+  align-self: start;
+  justify-self: left;
 }
 
 .footer__apps {
