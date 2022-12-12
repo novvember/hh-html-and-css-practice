@@ -1,0 +1,26 @@
+.apps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.apps__link {
+  display: block;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.apps__app {
+  display: block;
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+}

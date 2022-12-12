@@ -1,0 +1,96 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #212122;
+  line-height: 1.6;
+  color: #999;
+
+  @media @screen-gt-s {
+    padding-bottom: 30px;
+  }
+
+  @media @screen-gt-m {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'social'
+                       'apps'
+                       'text';
+  gap: 30px;
+  align-items: start;
+
+  @media @screen-gt-s {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'social apps'
+                         'text text';
+  }
+
+  @media @screen-gt-m {
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: 'social apps logo'
+                         'text text text';
+    gap: 40px;
+  }
+}
+
+.footer__social {
+  grid-area: social;
+  justify-self: left;
+}
+
+.footer__apps {
+  grid-area: apps;
+  justify-self: center;
+}
+
+.footer__logo-link {
+  grid-area: logo;
+  justify-self: end;
+  display: none;
+  width: 45px;
+  aspect-ratio: 1;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media @screen-gt-m {
+    display: block;
+  }
+}
+
+.footer__logo-image {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.footer__text {
+  grid-area: text;
+  padding-top: 15px;
+  border-top: 1px solid #666;
+
+  @media @screen-gt-s {
+    padding-top: 30px;
+  }
+}
+
+.footer__text-item {
+  margin: 0;
+  max-width: 600px;
+
+  @media @screen-gt-s {
+    width: 85%;
+  }
+
+  @media @screen-gt-m {
+    width: 75%;
+  }
+}
